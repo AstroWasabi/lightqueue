@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lightqueue"
+version = "0.1.0"
+description = "Lightweight async distributed task queue and background execution engine in Python"
+requires-python = ">=3.11"
+dependencies = [
+  "redis>=5.0.0",
+]
+
+[tools.setuptools.packages.find]
+where = ["."]
+include = "lightqueue"
